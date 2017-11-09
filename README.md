@@ -8,6 +8,7 @@ other languages are count 280 letters. To optimize tweet to mix English and Japa
 ## Install
 ```bash
 git clone git@github.com:ma3tk/Twitter-Lou-Translation.git
+cd Twitter-Lou-Translation
 bundle install
 ```
 
