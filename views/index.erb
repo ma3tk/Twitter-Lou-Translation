@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ルー語変換ツール</title>
+</head>
+<body>
+<form>
+  <textarea name="tweet" placeholder="ここに変換したいツイートを入れてください" rows="10"><%= @orig_tweet %></textarea>
+  <button type="submit">ルー語に変換</button>
+</form>
+<div>
+  ※変換には少し時間がかかります。
+</div>
+<br/>
+<% if @new_tweet %>
+  <hr>
+  <div>
+    変換前:
+  </div>
+  <div>
+    <%= @orig_tweet %>
+  </div>
+  <br/>
+  <div>
+    変換結果:
+  </div>
+  <div>
+    <%= @new_tweet %>
+  </div>
+<% end %>
+</body>
+</html>
